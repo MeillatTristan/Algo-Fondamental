@@ -1,0 +1,50 @@
+ex 01
+
+int i, j
+tab t
+
+for i in range 6
+    for j in range 13
+        t[i,j] = 0
+
+ex 02
+
+1 2 3
+4 5 6
+
+ex 03
+
+1 4
+2 5
+3 6
+
+ex 04
+
+0 1
+1 2
+2 3
+3 4
+
+ex 05
+
+1 2
+3 4
+5 6
+7 8
+
+ex 06
+
+int nb_max, i, j
+tab t[12, 8]
+nb_max = 0
+for i in range 12
+    for j in range 8
+        if nb-max < tab[i, j]
+            nb_max = tab[i, j]
+
+ex 07
+
+
+
+
+

@@ -1,0 +1,39 @@
+VAR NUM : numeroColone, numeroLigne, nbCone, nbCaseARemplir
+VAR TABL CARAC : Tab(nbLigne,nbColonne)
+VAR BOOLEEN : Guirlande
+Lire nbCone
+Lire Guirlande
+nbLigne← nbCone*3+4
+nbColonne ← nbcone*2+3
+Pour numeroLigne <- 0 à nbLigne-4 								////////////////EPINE
+	nbCaseARemplir<-Mod(numeroLigne,3)*2+nbCaseARemplir
+	Si Mod(numeroLigne,3) ==0 
+		nbCaseARemplir<-nbCaseARemplir-2
+	Fin Si
+	Pour numeroColonne <- 0 à (nbColonne-nbCaseARemplir)/2
+		Tab(numeroLigne,numeroColonne)<- " "
+		Ecrire Tab(numeroLigne,numeroColonne)
+	numeroColonne
+	Pour numeroColonne <- (nbColonne-nbCaseARemplir)/2+1 à (nbColonne-nbCaseARemplir)/2+nbCaseARemplir
+		Tab(numeroLigne,numeroColonne)<- "*"
+		Ecrire Tab(numeroLigne,numeroColonne)
+	numeroColonne
+	Pour numeroColonne <- (nbColonne-nbCaseARemplir)/2+nbCaseARemplir à nbColonne
+		Tab(numeroLigne,numeroColonne)<- " "
+		Ecrire Tab(numeroLigne,numeroColonne)
+	numeroColonne
+numeroLigne suivant
+Pour numeroLigne <- nBLigne-3 à nbLigne                          /////////////////////TRONC
+	Pour numeroColonne <- 0 à nbColonne
+		Tab(numeroLigne,numeroColonne)<-" "
+		Si nbColonne==nbColonne/2+0.5+1 OU nbColonne== nbColonne/2+0.5-1 OU nbColonne==nbColonne/2+0.5
+			Tab(numeroLigne,numeroColonne)<-"*"
+		Si Guirlande == Vrai
+			Pour i <- 0 à nbCone
+				Tab(numeroLigne-3,nbColonne/2+0.5+n*1 ; numeroLigne-3,nbColonne/2+0.5-i*1)
+				Tab(numeroLigne-2,nbColonne/2+0.5+n*1 ; numeroLigne-2,nbColonne/2+0.5-i*1)
+			i suivant
+		FinSi
+		Ecrire Tab(numeroLigne,numeroColonne)
+	numeroColonne suivant
+numeroLigne suivant

@@ -1,0 +1,116 @@
+ex 01
+la 3 et 5
+
+ex 02
+
+str mot
+
+read mot
+
+ecrire : len(mot)
+
+ex 03
+
+int i, j, len
+str mot
+
+read mot
+i = 0
+
+len = len(mot) - 1
+j = 0
+while i < len
+    if mot[i] == " "
+        j++
+    i++
+
+ecrire : j + 1
+
+ex 04
+
+int i, j, len
+str mot
+
+read mot
+i = 0
+
+len = len(mot)
+j = 0
+while i < len
+    if mot[i] == "a" OU "e" OU "i" OU "o" OU "u" OU "y"
+        j++
+    i++
+
+ex 05
+
+int i, len, suppr
+str phrase, remp
+
+read mot
+read suppr
+
+i = 0
+len = len(mot) - 1
+while i <= len
+    if i != suppr
+        remp[i] = mot[i]
+
+i = 0
+while i <= len
+    ecrire : remp[i]
+
+ex 06
+
+int i, len
+str phrase
+
+len = len(phrase) - 1
+i = 0
+while i <= len
+    str[i]++
+    i++
+i = 0
+while i <= len
+    ecrire : phrase[i]
+
+ex 07
+
+int i, len, x
+str phrase
+
+read x
+len = len(phrase) - 1
+i = 0
+while i <= len
+    str[i] = str[i] + x
+    i++
+i = 0
+while i <= len
+    ecrire : phrase[i]
+
+ex 08
+
+str alphabet, random_alpha, phrase
+int i, j, len
+
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+read random_alpha
+read phrase
+
+len = len(phrase) - 1
+i = 0
+while i < len
+    j = 0
+    while alphabet[j] != phrase[i]
+        j++
+    phrase[i] = random_alpha[j]
+    i++
+
+ex 10
+
+int x
+
+if x%2 == 0
+    ecrire : ce nombre est pair
+else
+    ecrire : ce nombre est impair
